@@ -1,0 +1,67 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --BannerSize: 770px;
+    --ButtonSize: 17px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header .container{
+    width: 100%;
+}
+.logo img{
+    width:120px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--preta);
+    color: white;
+    text-align: center;
+}
+
+main{
+    color:white;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.icon{
+    width: 10%;
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.botao{
+    margin-top: 20px;
+    border: 2px solid gray;
+    color:gray;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    color: white;
+    border: 2px solid white;
+}
+
+.estilo{
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
