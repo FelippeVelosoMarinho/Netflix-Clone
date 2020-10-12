@@ -1,0 +1,196 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --BannerSize: 770px;
+    --ButtonSize: 17px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*elementos base*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--preta);
+    color: white;
+}
+
+main{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/op-poster2.jpg');
+    background-size: cover;
+}
+
+header .container{
+    background: linear-gradient(180deg, var(--preta), rgba(0,0,0,.1));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+}
+.logo img{
+    width:120px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+
+
+header nav a{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    font-family: sans-serif;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 1px 1.5px rgba(0,0,0,.45);
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+header nav a:active{
+    font-size: 15px;
+}
+
+.icons{
+    margin-left: 36%;
+}
+
+header nav i{
+    margin-left: 22px;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 35px;  
+    height: 35px;  
+}
+
+.menu-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.menu-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(14, 14, 14);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    padding: 12px 16px;
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 1px 1.5px rgba(0,0,0,.45);
+    color: rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+.menu-dropdown-content p:hover{
+    font-size: 13px;
+    color: white;
+}
+
+.menu-dropdown-content hr{
+    width: 100%;
+    height: 1px;
+}
+
+.menu-dropdown:hover .menu-dropdown-content {
+    display: block;
+  }
+
+.menu-icons{
+    cursor: pointer;
+    padding-top: 15px;
+    width: 35px;
+    border-radius: 8%;
+    margin-left: 35px;
+    position: relative;
+    display: inline-block;  
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: var(--BannerSize);
+    margin-left: 15px;
+    text-shadow: 1px 1.5px rgba(0,0,0,.45);
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    height: 200px;
+    width: 510px;
+}
+
+.botao1{
+    background-color: white;
+    border: none;
+    color: rgb(12, 12, 12);
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: var(--ButtonSize);
+    transition: .4s ease all;
+    border-radius: 6%;
+}
+
+.botao2{
+    background-color: rgba(82, 82, 82, 0.85);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: var(--ButtonSize);
+    transition: .4s ease all;
+    border-radius: 6%;
+}
+
+.botao1:hover{
+    background-color: rgb(177, 177, 177);
+    color: black;
+}
+
+.botao2:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 6px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 10px;
+}
